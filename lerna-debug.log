@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'exec' ],
+0 silly argv   scope: '@4eplatform/gateway',
+0 silly argv   args: [],
+0 silly argv   '--': [ 'npm', 'start' ],
+0 silly argv   lernaVersion: '8.1.9',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.9
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath D:\Work\4EPlatform-WebUi-RiskManagement
+4 error

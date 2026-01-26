@@ -1,0 +1,159 @@
+#pnf-cont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+}
+#pnf {
+  width: 275px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+#pnf::after {
+  content: "!الصفحة غير متوفرة";
+  position: absolute;
+  bottom: 15%;
+  left: 12%;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgb(85, 177, 220);
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: show 1s 2s ease forwards;
+}
+[lang="en"] #pnf::after {
+  content: "Page Not Found!";
+  left: 15%;
+}
+
+#pnf svg {
+  height: 300px;
+  width: 95px;
+}
+
+#four {
+  display: flex;
+  justify-content: center;
+  padding: 30% 0 0 20px;
+}
+
+#four path {
+  transform: scale(1.5);
+}
+
+#four2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30%;
+  margin-left: -55px;
+}
+
+#four2 path {
+  transform: scale(1.5);
+}
+
+#e {
+  display: flex;
+  justify-content: center;
+  padding-top: 42%;
+}
+
+#e path {
+  transform: scale(1.5);
+}
+#e .animated-path {
+  animation-delay: 0.5s;
+}
+
+#o {
+  display: flex;
+  justify-content: center;
+  padding-top: 42%;
+  width: 20px;
+  margin-left: -56px;
+  transform: scaleX(-1);
+  z-index: -1;
+  width: 70px;
+}
+
+#o path {
+  transform: scale(1.5) translateX(40px);
+}
+
+.animated-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 4s forwards;
+  stroke: rgb(85, 177, 220);
+}
+
+.animated-path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw2 3s 1.7s forwards;
+  stroke: rgb(85, 177, 220, 0.3);
+}
+
+#four2 .animated-path {
+  animation-delay: 5s;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgb(85, 177, 220);
+  }
+}
+
+@keyframes draw2 {
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgb(85, 177, 220, 0.3);
+  }
+}
+#pnf-title {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+.links :is(a, span) {
+  color: rgb(85, 177, 220, 0.3) !important;
+  margin-top: -10px;
+  font-size: 14pt;
+  font-weight: bold;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: show .5s 3s ease-in forwards;
+}
+.links :is(a, span):hover {
+  color: rgb(85, 177, 220) !important;
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 800px) {
+  #pnf {
+    transform: scale(0.6);
+  }
+}

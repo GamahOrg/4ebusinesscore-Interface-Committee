@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#kt_content_container {
+  /* min-height: 80vh; */
+  margin-bottom: 20px;
+}
+.eye-password {
+  position: absolute;
+  top: 12px;
+  font-size: 12pt;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.eye-password:hover {
+  opacity: 1;
+}
+.eye-password:active {
+  color: black;
+}
+.no-icon .Toastify__toast-body:before {
+  display: none !important;
+}
+
+.notifications-icon {
+  border: 1px solid rgba(220, 220, 220, 0.363);
+  border-radius: 50%;
+  /* overflow: hidden; */
+  background-color: rgba(255, 255, 255, 0.308);
+  position: relative;
+}
+
+.notifications-icon-count {
+  font-size: 10pt;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -8px;
+  z-index: 9999;
+  color: white;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.indicatorsIcons i {
+  font-size: 36px !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
+}
+
+.DefaultIconSize i,
+.DefaultIconSize span.svg-icon {
+  font-size: 22px !important;
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.LargeIconSize i,
+.LargeIconSize span.svg-icon {
+  font-size: 32px !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.XLargeIconSize i,
+.XLargeIconSize span.svg-icon {
+  font-size: 38px !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.oneLineShow {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  width: 190px;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+
+.oneLineShow-sm {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  width: 125px;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+.DevelopmentDefaultIconSize i,
+.DevelopmentDefaultIconSize span.svg-icon {
+  font-size: 35px !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+#webpack-dev-server-client-overlay {
+  display: none !important;
+  background-color: transparent;
+}
